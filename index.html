@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>JQueryの練習</title>
+	<a href="http://google.com" data-sitename="google">Google</a>
 	<style>
 		.myStyle{
 			border:5px solid green;
@@ -12,33 +13,13 @@
 </head>
 <body>
 	<p>JQueryの練習</p>
-	<p><a href="http://google.com">Google</a></p>
-	<p><a href="http://yahoo.jp">Yahoo</a></p>
-	<p><a href="http://dotinstall.com">Dotinstall</a></p>
 
-	<ul id="main">
-		<li>0</li>
-		<li class="item">1</li>
-		<li class="item">2</li>
-		<li>3
-			<ul id="sub">
-				<li>3-0</li>
-				<li>3-1</li>
-				<li class="item">3-2</li>
-				<li class="item">3-3</li>
-				<li>3-4</li>
-			</ul>
-		</li>
-	</ul>
+	
 	<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
 	$(function() {
-		// セレクタメソッド
-		// .css
-		// $('p').css('color','red').css('background','blue');
-		// console.log($('p').css('color'));
-		$('p').addClass('myStyle');
-
+		// console.log($('a').attr('href','http://google.co.jp'));
+		console.log($('a').data('sitename'));
 	});
 </script>
 </body>
