@@ -8,6 +8,10 @@
 </head>
 <body>
 	<p>JQueryの練習</p>
+	<p><a href="http://google.com">Google</a></p>
+	<p><a href="http://yahoo.jp">Yahoo</a></p>
+	<p><a href="http://dotinstall.com">Dotinstall</a></p>
+
 	<ul id="main">
 		<li>0</li>
 		<li class="item">1</li>
@@ -22,14 +26,20 @@
 			</ul>
 		</li>
 	</ul>
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
-	// $(document).redy(function() {
 	$(function() {
-		//セレクタ: 処理対象となるDOM要素を指定する記法
-		//メソッド: 処理
-		//メソッドチェーン記法↓
-		$('p').css('color','red').hide('slow');
+		// セレクタメソッド
+		// 属性セレクタ
+		// = 等しい
+		// != 等しくない
+		// *= ~を含む
+		// ^= 先頭に含む
+		// $= 終わりに含む
+		// $('a[href="http://google.com"]').css('background','red');
+		// $('a[href!="http://google.com"]').css('background','red');
+		// $('a[href*="dotinstall.com"]').css('background','red');
+		$('a[href$="jp"]').css('background','red');
 	});
 </script>
 </body>
