@@ -3,23 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<title>JQueryの練習</title>
-	<a href="http://google.com" data-sitename="google">Google</a>
-	<style>
-		.myStyle{
-			border:5px solid green;
-			font-size: 48px;
-		}
-	</style>
+	<a href="http://google.com" data-sitename="google">google</a>
+	<input type="text" value="hello">
 </head>
 <body>
 	<p>JQueryの練習</p>
 
-	
 	<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
 	$(function() {
-		// console.log($('a').attr('href','http://google.co.jp'));
-		console.log($('a').data('sitename'));
+		//text
+		// html
+		// val
+		// remove, empty
+		// $('p').text('just changed');
+		// $('p').html('<a href=""> click me!</a>');
+		console.log($('input').val());
+		$('input').val("hello, again");
+		$('p').remove();
 	});
 </script>
 </body>
