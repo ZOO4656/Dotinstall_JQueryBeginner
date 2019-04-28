@@ -2,9 +2,13 @@
 <html lang= "ja">
 <head>
 	<meta charset="utf-8">
-	<title>
-		JQueryの練習
-	</title>
+	<title>JQueryの練習</title>
+	<style>
+		.myStyle{
+			border:5px solid green;
+			font-size: 48px;
+		}
+	</style>
 </head>
 <body>
 	<p>JQueryの練習</p>
@@ -30,16 +34,11 @@
 	<script>
 	$(function() {
 		// セレクタメソッド
-		// 属性セレクタ
-		// = 等しい
-		// != 等しくない
-		// *= ~を含む
-		// ^= 先頭に含む
-		// $= 終わりに含む
-		// $('a[href="http://google.com"]').css('background','red');
-		// $('a[href!="http://google.com"]').css('background','red');
-		// $('a[href*="dotinstall.com"]').css('background','red');
-		$('a[href$="jp"]').css('background','red');
+		// .css
+		// $('p').css('color','red').css('background','blue');
+		// console.log($('p').css('color'));
+		$('p').addClass('myStyle');
+
 	});
 </script>
 </body>
